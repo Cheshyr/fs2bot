@@ -1,0 +1,9 @@
+{
+  "name": "fs2bot",
+  "version": "0.0.0",
+  "description": "fs2bot",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
