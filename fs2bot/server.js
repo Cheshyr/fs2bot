@@ -6,3 +6,5 @@ http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello World\n');
 }).listen(port);
+
+var fs2bot = require('./bot.js');
