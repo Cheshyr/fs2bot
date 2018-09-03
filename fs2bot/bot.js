@@ -19,15 +19,24 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
 
-        console.log('received: ' + cmd);
+        console.log('received: ' + user + ' ' + userID + ' ' + cmd + ' ' + args);
         args = args.splice(1);
         switch (cmd) {
             // !ping
             case 'ping':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Pong!'
+                    message: 'hello ' + user
                 });
+                break;
+
+            case 'register':
+                // do things
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'registered ' + user + ' to tourney: '  + args
+                });
+
                 break;
             // Just add any case commands if you want to..
         }
