@@ -7,6 +7,9 @@
     "name": "Cheshyr"
   },
   "dependencies": {
-    "discord.io": "^2.5.3"
+    "bson-ext": "^2.0.1",
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.4.2",
+    "mongodb": "^3.1.4"
   }
 }
